@@ -5,15 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.3",
+    "coveralls": "^3.1.0",
+    "jest": "^26.6.3",
     "jest-chain": "^1.1.5",
     "jest-extended": "^0.11.5"
-  },
-  "devDependencies": {
-    "coveralls": "^3.1.0"
   }
 }
