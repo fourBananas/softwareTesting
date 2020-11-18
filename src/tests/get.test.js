@@ -21,9 +21,4 @@ describe('Get', () => {
         expect(get(obj, 'a', 'default')).toBe('default')
     });
     
-
-    
-
-  
-
 });
