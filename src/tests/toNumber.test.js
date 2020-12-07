@@ -1,4 +1,4 @@
-import toNumber from '../toFinite'
+import toNumber from '../toNumber'
 
 describe('toNumber', () => {
 
@@ -26,11 +26,4 @@ describe('toNumber', () => {
         expect(toNumber("  0  ")).toEqual(0)
     });
 
-    test('7. Should return NaN for object', () => {
-        expect(toNumber({})).toEqual(NaN)
-    });
-
-    test('8. Should return NaN for Array', () => {
-        expect(toNumber([])).toEqual(NaN)
-    });
 })
