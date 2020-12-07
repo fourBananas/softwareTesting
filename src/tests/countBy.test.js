@@ -23,5 +23,8 @@ describe('CountBy', () => {
         expect(countBy(employees, val => val.salary > 1100)).toEqual({ 'true': 2, 'false':1 })
     });
 
+    test("3. Should count employees with salary over 900", () => {
+        expect(countBy(employees, val => val.salary > 900)).toEqual({ 'true': 3, 'false':0 })
+    });
 
 })
