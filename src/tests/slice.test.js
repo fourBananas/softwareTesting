@@ -2,12 +2,12 @@ import slice from '../slice'
 
 describe('Slice', () => {
 
-    test("1. Should return [2, 1]", () => {
+    test("1. Should return []", () => {
         expect(slice([2, 1], 2)).toStrictEqual([])
     });
     
-    test('2. Should return [2,3]', () => {
-        expect(slice([1,2,3], 1, 2)).toStrictEqual([3])
+    test('2. Should return [1,3]', () => {
+        expect(slice([1,2,3], 1, 2)).toStrictEqual([1,3])
     });
 
     test('3. Should return []', () => {
