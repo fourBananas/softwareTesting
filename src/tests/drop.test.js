@@ -1,4 +1,4 @@
-import drop from '../difference'
+import drop from '../drop'
 
 describe('Drop', () => {
 
