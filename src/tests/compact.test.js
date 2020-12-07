@@ -9,7 +9,7 @@ test("2. Should return array without falsy values. Second value falsy", () => {
 });
 
 test("3. Should return array without falsy values. Last value falsy", () => {
-   expect(compact([1, false, 2, '', 3, ''])).toStrictEqual([1, 2, 3])
+    expect(compact([1, false, 2, '', 3, ''])).toStrictEqual([1, 2, 3])
 });
 
 test("4. Should return empty array. All values falsy", () => {
