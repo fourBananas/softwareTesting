@@ -23,6 +23,6 @@ describe('isArrayLike', () => {
     });
 
     test('6. Should return truthy for {"a": 1, "b": 2}', () => {
-        expect(isArrayLike({'a': 1, 'b': 2})).toBeTruthy()
+        expect(isArrayLike({'a': 1, 'b': 2})).toBeFalsy()
     });
 })
