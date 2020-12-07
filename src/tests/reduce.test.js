@@ -14,7 +14,7 @@ describe('Reduce', () => {
     test("4. Test array with multiplication function(intial value 1)", () => {
         expect(reduce(array, (result, n) => result * n, 1)).toBe(120)
     });
-    test("4. Test array with multiplication function(intial value 0)", () => {
-        expect(reduce(array, (result, n) => result * n, 1)).toBe(0)
+    test("5. Test array with multiplication function(intial value 0)", () => {
+        expect(reduce(array, (result, n) => result * n, 0)).toBe(0)
     });
 })
