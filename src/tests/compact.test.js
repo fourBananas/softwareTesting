@@ -21,4 +21,8 @@ describe('Compact', () => {
     test("5. Should return empty array. All values falsy", () => {
         expect(compact([NaN, false, undefined, '', 0, "", null])).toStrictEqual([])
     });
+
+    test("6. Should return empty array for empty array", () => {
+        expect(compact([])).toStrictEqual([])
+    });
 })
