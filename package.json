@@ -8,6 +8,11 @@
     "test": "jest",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/internal/"
+    ]
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {},
