@@ -10,7 +10,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "!src/internal/"
+      "!/src/internal/",
+      "src/*.js"
     ]
   },
   "author": "",
