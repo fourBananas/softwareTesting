@@ -23,7 +23,11 @@ describe('Keys', () => {
         expect(keys("")).toEqual([])
     });
 
-    test('5. Should return ["a", "b"] from a object with those keys', () => {
+    test('5. Should return ["a", "b"] from an object with those keys', () => {
         expect(keys({"a": 1, "b": 2})).toEqual(['a', 'b'])
+    });
+
+    test('6. Should return [] from an empty object', () => {
+        expect(keys({})).toEqual([])
     });
 })

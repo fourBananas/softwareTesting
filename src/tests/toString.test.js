@@ -25,4 +25,8 @@ describe('toString', () => {
     test('6. Should return "a,b,c" for ["a", "b", "c"]', () => {
         expect(toString(["a", "b", "c"])).toEqual("a,b,c")
     });
+
+    test('7. Should return "" for ""', () => {
+        expect(toString("")).toEqual("")
+    });
 })
